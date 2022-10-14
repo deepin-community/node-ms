@@ -1,0 +1,1 @@
+mocha -C tests.js

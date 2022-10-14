@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-ms-$1/ \
+ https://github.com/guille/ms.js/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,component=typesms,pgpmode=none" \
+ https://registry.npmjs.org/@types/ms https://registry.npmjs.org/@types/ms/-/ms-([\d\.]+)@ARCHIVE_EXT@ checksum

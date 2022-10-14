@@ -1,0 +1,29 @@
+Source: node-ms
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Paolo Greppi <paolo.greppi@libpf.com>,
+           Joseph Nuthalapati <njoseph@riseup.net>
+Build-Depends: debhelper-compat (= 13)
+ , mocha
+ , node-expect.js
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-ms
+Vcs-Git: https://salsa.debian.org/js-team/node-ms.git
+Homepage: https://github.com/vercel/ms
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-ms
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
+Description: milliseconds conversion utility - Node.js module
+ This module provides a tiny milliseconds conversion utility able to
+ transform a string with a valid time unit to the equivalent number
+ of milliseconds and vice versa.
+ .
+ Node.js is an event-based server-side JavaScript engine.
