@@ -18,7 +18,7 @@ Rules-Requires-Root: no
 Package: node-ms
 Architecture: all
 Depends: ${misc:Depends}
- , nodejs
+ , nodejs:any
 Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: milliseconds conversion utility - Node.js module
