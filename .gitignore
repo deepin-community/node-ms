@@ -1,1 +1,5 @@
-.pc/
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
